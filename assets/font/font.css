@@ -1,0 +1,23 @@
+/**
+ * VOYAGE FONT
+ */
+
+font-face {
+	font-family: 'Voyage';
+	src: local('Voyage Regular'), local('Voyage-Regular'),
+		url('./Voyage/Voyage-Regular.otf') format('otf'),
+		url('./Voyage/voyage-regular-webfont.woff') format('woff'),
+		url('./Voyage/voyage-regular-webfont.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FiraCode NF', 
+	src: local('FiraCode NF'), local('FiraCode-NF'),
+		url('./Fira/FiraCodeNF.ttf') format('ttf');
+	font-weight: light;
+	font-style: normal;
+	font-display: swap;
+}
