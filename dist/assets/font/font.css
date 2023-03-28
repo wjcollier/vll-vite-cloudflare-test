@@ -1,9 +1,6 @@
-/**
- * VOYAGE FONT
- */
 
 @font-face {
-	font-family: 'Voyage',
+	font-family: 'Voyage';
 	src: local('Voyage Regular'), local('Voyage-Regular'),
 		url('./Voyage/Voyage-Regular.otf') format('otf'),
 		url('./Voyage/voyage-regular-webfont.woff') format('woff'),
@@ -14,7 +11,7 @@
 }
 
 @font-face {
-	font-family: 'FiraCode NF', 
+	font-family: 'FiraCode NF';
 	src: local('FiraCode NF'), local('FiraCode-NF'),
 		url('./Fira/FiraCodeNF.ttf') format('ttf'),
 		url('./Fira/FiraCodeLight.woff') format('woff'),

@@ -266,7 +266,7 @@ body.nav-active {
 .h1 {
 	font-size: var(--fontSize-2);
 	line-height: 1.2;
-	font-family: 'FiraCod NF', 'Voyage', sans-serif;
+	font-family: 'FiraCode NF', 'Voyage', sans-serif;
 }
 
 .h2,
@@ -601,14 +601,14 @@ body.nav-active {
 }
 
 span.title.vll {
-	font-family: 'FiraCod NF', 'Voyage', sans-serif;
+	font-family: 'FiraCode NF', 'Voyage', sans-serif;
 }
 
 h1.title {
-	font-family: 'FiraCod NF', 'Voyage', sans-serif;
+	font-family: 'FiraCode NF', 'Voyage', sans-serif;
 }
 p.title {
-	font-family: 'FiraCod NF', 'Voyage', sans-serif;
+	font-family: 'FiraCode NF', 'Voyage', sans-serif;
 }
 
 /*-----------------------------------*\
