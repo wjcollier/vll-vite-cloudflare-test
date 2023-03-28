@@ -156,7 +156,7 @@ html {
 body {
 	background-color: var(--bg-black);
 	color: var(--text-light-gray);
-	font-family: var(--fontFamily-roboto);
+	font-family: var(--fontFamily-roboto), sans-serif;
 	font-size: var(--fontSize-8);
 	line-height: 1.75;
 	overflow: hidden;
@@ -259,15 +259,14 @@ body.nav-active {
 
 .title {
 	color: var(--text-white);
-	font-family: var(--fontFamily-roboto);
+	font-family: var(--fontFamily-roboto), sans-serif;
 	font-weight: var(--weight-regular);
 }
 
 .h1 {
 	font-size: var(--fontSize-2);
 	line-height: 1.2;
-	font-family: var(--fontFamily-fira), var(--fontFamily-voyage), sans-serif;
-
+	font-family: 'FiraCod NF', 'Voyage', sans-serif;
 }
 
 .h2,
@@ -602,83 +601,14 @@ body.nav-active {
 }
 
 span.title.vll {
-	font-family: var(--fontFamily-fira), var(--fontFamily-voyage), sans-serif;
+	font-family: 'FiraCod NF', 'Voyage', sans-serif;
 }
 
 h1.title {
-	font-family: var(--fontFamily-fira), var(--fontFamily-voyage), sans-serif;
+	font-family: 'FiraCod NF', 'Voyage', sans-serif;
 }
-/*-----------------------------------*\
-  #HERO - CHATBOT
-\*-----------------------------------*/
-
-#chatbot {
-	width: 400px;
-	width: 400px;
-	margin: 20px;
-	padding: 10px;
-	text-align: center;
-}
-
-#chatlogs {
-	background-color: var(--bg-light-gray);
-	padding: 20px;
-	border-radius: 10px;
-	max-height: 300px;
-	overflow-y: auto;
-	display: flex;
-	flex-direction: column;
-}
-
-.chat {
-	margin-bottom: 20px;
-	display: flex;
-	align-items: flex-start;
-}
-
-.chat.self {
-	align-self: flex-end;
-	text-align: right;
-}
-
-.chat p {
-	background-color: var(--bg-white);
-	padding: 10px;
-	padding-right: 30px;
-	padding-left: 20px;
-	border-radius: 10px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	max-width: 80%;
-}
-
-#chatform {
-	display: flex;
-	align-items: center;
-	margin-top: 20px;
-}
-
-#chatform input[type='text'] {
-	padding: 10px;
-	border: none;
-	border-radius: 10px 0 0 10px;
-	flex-grow: 1;
-	margin-right: 10px;
-	color: var(--bg-white);
-}
-
-#chatform button[type='submit'] {
-	padding: 10px 20px;
-}
-.chat-text {
-	color: var(--bg-black);
-}
-.self {
-	color: blue;
-	float: right;
-}
-
-.other {
-	color: var(--gradient-3);
+p.title {
+	font-family: 'FiraCod NF', 'Voyage', sans-serif;
 }
 
 /*-----------------------------------*\
@@ -730,7 +660,7 @@ h1.title {
 .card-title {
 	padding: 2px;
 	/* font-size: 1.4rem; */
-	font-family: var(--fontFamily-roboto);
+	font-family: var(--fontFamily-roboto), sans-serif;
 	letter-spacing: 0.3em;
 	margin: 0;
 	color: #fff;
@@ -790,7 +720,6 @@ ul.card-list li strong {
 }
 .card-toggle:hover {
 	background-color: #e5e5e5;
-	/* color: (var(--text-black)); */
 	box-shadow: none;
 }
 .card-toggle.read-less {
@@ -899,7 +828,7 @@ ul.card-list li strong {
 }
 
 .skill-wrapper .span {
-	font-family: var(--fontFamily-recoleta);
+	font-family: var(--fontFamily-roboto), sans-serif;
 	font-weight: var(--weight-medium);
 }
 
