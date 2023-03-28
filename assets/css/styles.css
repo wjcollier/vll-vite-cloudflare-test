@@ -1187,11 +1187,27 @@ textarea.input-field {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+@media (max-width: 375px) {
+span.title.vll {
+	font-size: 2rem;
+}
 
+ h1.title {
+	font-size: 3.5rem;
+}
+}
 /**
  * responsive for large than 575px screen
  */
+/* @media (min-width: 375px) {
+	span.title.vll {
+	font-size: 1.5rem;
+}
 
+h1.title {
+	font-size: 1.5rem;
+}
+} */
 @media (min-width: 575px) {
 	/**
    * CUSTOM PROPERTY
@@ -1228,6 +1244,8 @@ textarea.input-field {
 	.hero .banner-outline::after {
 		right: -15px;
 	}
+	
+	
 
 	/**
    * SERVICE
