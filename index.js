@@ -1,6 +1,5 @@
-import explicitRenderHtml  from './index.html'
+const explicitRenderHtml = require('./index.html')
 require('dotenv').config()
-
 
 // This is the demo secret key. In prod, we recommend you store
 // your secret key(s) safely.
@@ -68,5 +67,5 @@ export default {
 
 		// The request is for a static asset, so just pass it through to the origin.
 		return fetch(request)
-	}
+	},
 }
