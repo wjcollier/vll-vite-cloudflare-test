@@ -1117,7 +1117,15 @@ textarea.input-field {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+@media (max-width: 375px) {
+span.title.vll {
+	font-size: 2rem;
+}
 
+h1.title {
+	font-size: 3rem;
+}
+}
 /**
  * responsive for large than 575px screen
  */
