@@ -2,8 +2,8 @@
  * VOYAGE FONT
  */
 
-@font-face {
-	font-family: 'Voyage',
+font-face {
+	font-family: 'Voyage';
 	src: local('Voyage Regular'), local('Voyage-Regular'),
 		url('./Voyage/Voyage-Regular.otf') format('otf'),
 		url('./Voyage/voyage-regular-webfont.woff') format('woff'),
@@ -12,7 +12,7 @@
 	font-style: normal;
 	font-display: swap;
 }
- 
+
 @font-face {
 	font-family: 'FiraCode NF', 
 	src: local('FiraCode NF'), local('FiraCode-NF'),
