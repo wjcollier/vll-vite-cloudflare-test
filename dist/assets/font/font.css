@@ -16,8 +16,12 @@ font-face {
 @font-face {
 	font-family: 'FiraCode NF', 
 	src: local('FiraCode NF'), local('FiraCode-NF'),
-		url('./Fira/FiraCodeNF.ttf') format('ttf');
-	font-weight: light;
+		url('./Fira/FiraCodeNF.ttf') format('ttf'),
+		url('./Fira/FiraCodeLight.woff') format('woff'),
+		url('./Fira/FiraCodeMedium.woff2') format('woff2');
+	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
+
+
