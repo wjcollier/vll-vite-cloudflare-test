@@ -35,12 +35,6 @@ gulp.task('js-assets', function () {
 		.pipe(gulp.dest('dist/assets/js'))
 })
 
-gulp.task('js-index', function () {
-	return gulp
-		.src(['index.js'])
-		.pipe(uglify())
-		.pipe(gulp.dest('dist'))
-})
 
 gulp.task('images', function () {
 	return gulp.src('assets/images/**/*').pipe(gulp.dest('dist/assets/images'))
@@ -52,6 +46,6 @@ gulp.task('font', function () {
 
 gulp.task(
 	'build',
-	gulp.series('clean', 'html', 'css', 'js-assets', 'js-index', 'images', 'font')
+	gulp.series('clean', 'html', 'css', 'js-assets', 'images', 'font')
 )
 
