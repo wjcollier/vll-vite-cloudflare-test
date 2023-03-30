@@ -161,7 +161,6 @@ body {
 	font-size: var(--fontSize-8);
 	line-height: 1.75;
 	overflow: hidden;
-	
 }
 
 body.loaded {
@@ -261,7 +260,7 @@ body.nav-active {
 
 .title {
 	color: var(--text-white);
-	font-family: var(--fontFamily-roboto), sans-serif;
+	font-family: var(--fontFamily-fira), sans-serif;
 	font-weight: var(--weight-regular);
 }
 
@@ -425,11 +424,12 @@ body.nav-active {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 }
 
 .nav-open-btn {
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	display: grid;
 	place-content: center;
 	gap: 6px;
@@ -492,7 +492,7 @@ body.nav-active {
 	height: 30px;
 	background-color: var(--bg-smoky-black);
 	color: var(--text-white);
-	font-size: 2rem;
+	font-size: 3rem;
 	display: grid;
 	place-items: center;
 }
@@ -608,6 +608,7 @@ span.title.vll {
 
 h1.title {
 	font-family: 'FiraCode NF', 'Voyage', sans-serif;
+	font-weight: bold;
 }
 p.title {
 	font-family: 'FiraCode NF', 'Voyage', sans-serif;
@@ -633,6 +634,8 @@ p.title {
 	max-width: 350px;
 	max-height: 280px;
 	margin: 20px;
+	padding: 20px;
+	/* padding-top: 10px; */
 	border: 1px solid var(--bg-jet);
 	border-radius: 10px;
 	overflow: hidden;
@@ -640,18 +643,18 @@ p.title {
 	box-sizing: border-box;
 }
 .card.hidden {
-	max-height: 280px;
+	max-height: 290px;
 	padding-bottom: 0; /* Remove extra padding when in "Read More" state */
 }
 .card-img {
 	display: flex;
-	height: 75px;
+	height: 70px;
 	text-align: center;
 	justify-content: center;
 	margin: auto;
 	max-width: 70px;
-	padding-top: 4px;
-	border-radius: 20px;
+	padding-top: 20px;
+	border-radius: 30px;
 }
 
 .card-content {
@@ -661,17 +664,15 @@ p.title {
 
 .card-title {
 	padding: 2px;
-	/* font-size: 1.4rem; */
-	font-family: var(--fontFamily-roboto), sans-serif;
-	letter-spacing: 0.3em;
-	margin: 0;
+	font-family: var(--fontFamily-fira), sans-serif;
+	letter-spacing: 0.22em;
 	color: #fff;
 	text-align: center;
-	font-weight: bolder;
+	font-weight: bold;
 }
 
 .card-text {
-	padding: 1px;
+	padding: 2px;
 	height: 90px;
 	text-align: center;
 	margin: 10px 0;
@@ -695,6 +696,7 @@ p.title {
 
 ul.card-list li {
 	font-weight: normal;
+	padding-top: 20px;
 }
 
 ul.card-list li strong {
@@ -707,7 +709,9 @@ ul.card-list li strong {
 .card-list li:hover {
 	border-color: #00d4ff;
 }
-
+/* button .card-toggle  {
+padding-bottom: 40px;
+} */
 .card-toggle {
 	display: block;
 	margin: 10px auto;
@@ -738,6 +742,12 @@ ul.card-list li strong {
 .expanded {
 	max-height: 1400px;
 }
+.first-list-item-padding {
+	margin-top: 10px;
+}
+.card:not(.expanded) {
+	padding: 0px;
+}
 
 /* Media Screens */
 
@@ -766,6 +776,8 @@ ul.card-list li strong {
 	padding-block: 16px;
 	border-block-end: 1px solid var(--border-eerie-black);
 	transition: var(--transition-1);
+	font-family: var(--fontFamily-fira);
+	font-family: bolder;
 }
 
 .tab-btn:is(:hover, :focus-visible, .active) {
@@ -822,28 +834,6 @@ ul.card-list li strong {
 	color: var(--text-white);
 }
 
-.skill-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-block: 30px 12px;
-}
-
-.skill-wrapper .span {
-	font-family: var(--fontFamily-roboto), sans-serif;
-	font-weight: var(--weight-medium);
-}
-
-.progress-bar {
-	background-color: var(--bg-smoky-black);
-	height: 4px;
-}
-
-.progress-fill {
-	background-color: var(--bg-white);
-	height: 100%;
-}
-
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
@@ -882,7 +872,11 @@ ul.card-list li strong {
 	opacity: 0;
 	transition: var(--transition-1);
 }
-
+h3 .card-title  {
+	font-size: 2rem;
+	font-weight: bolder;
+	letter-spacing: 0.20em;
+}
 .project-card .card-banner:is(:hover, :focus-within)::before {
 	opacity: 0.9;
 	margin: auto;
@@ -1120,19 +1114,19 @@ textarea.input-field {
   #MEDIA QUERIES
 \*-----------------------------------*/
 @media (min-width: 375px) and (max-width: 574px) {
-  .container {
-    max-width: 100%;
-    padding-inline: 20px;
-  }
+	.container {
+		max-width: 100%;
+		padding-inline: 20px;
+	}
 }
 @media (max-width: 575px) {
-  span.title.vll {
-    font-size: 22px; /* adjust as needed */
-  }
-  
-  h1.title {
-    font-size: 35px; /* adjust as needed */
-  }
+	span.title.vll {
+		font-size: 22px; /* adjust as needed */
+	}
+
+	h1.title {
+		font-size: 35px; /* adjust as needed */
+	}
 }
 
 /* @media (max-width: 375px) {

@@ -213,6 +213,8 @@ toggleButtons.forEach((button) => {
 	button.addEventListener('click', (event) => {
 		const card = event.target.closest('.card')
 		const cardToggle = card.querySelector('.card-toggle')
+		const cardContent = card.querySelector('.card-content')
+		const firstListItem = cardContent.querySelector('li:first-child')
 
 		if (card.classList.contains('expanded')) {
 			card.classList.remove('expanded')
@@ -221,6 +223,7 @@ toggleButtons.forEach((button) => {
 			if (cardToggle.classList.contains('read-less')) {
 				cardToggle.classList.remove('read-less')
 			}
+			firstListItem.classList.add('first-list-item-padding')
 		} else {
 			card.classList.remove('hidden')
 			card.classList.add('expanded')
@@ -228,6 +231,30 @@ toggleButtons.forEach((button) => {
 			if (!cardToggle.classList.contains('read-more')) {
 				cardToggle.classList.add('read-less')
 			}
+			firstListItem.classList.remove('first-list-item-padding')
 		}
 	})
 })
+
+// toggleButtons.forEach((button) => {
+// 	button.addEventListener('click', (event) => {
+// 		const card = event.target.closest('.card')
+// 		const cardToggle = card.querySelector('.card-toggle')
+
+// 		if (card.classList.contains('expanded')) {
+// 			card.classList.remove('expanded')
+// 			card.classList.add('hidden')
+// 			cardToggle.textContent = 'Read More'
+// 			if (cardToggle.classList.contains('read-less')) {
+// 				cardToggle.classList.remove('read-less')
+// 			}
+// 		} else {
+// 			card.classList.remove('hidden')
+// 			card.classList.add('expanded')
+// 			cardToggle.textContent = 'Read Less'
+// 			if (!cardToggle.classList.contains('read-more')) {
+// 				cardToggle.classList.add('read-less')
+// 			}
+// 		}
+// 	})
+// })
