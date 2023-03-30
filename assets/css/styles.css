@@ -433,8 +433,11 @@ body.nav-active {
 	display: grid;
 	place-content: center;
 	gap: 6px;
+	 margin-right: 20px;
 }
-
+.navbar.active + .nav-open-btn {
+  margin-left: 300px; /* adjust the margin when navbar is active */
+}
 .nav-open-btn .line {
 	width: 24px;
 	height: 2px;
