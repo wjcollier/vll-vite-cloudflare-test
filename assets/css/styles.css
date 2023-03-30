@@ -161,7 +161,7 @@ body {
 	font-size: var(--fontSize-8);
 	line-height: 1.75;
 	overflow: hidden;
-	min-zoom: 100%;
+	
 }
 
 body.loaded {
