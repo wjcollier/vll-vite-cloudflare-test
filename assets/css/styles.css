@@ -161,6 +161,7 @@ body {
 	font-size: var(--fontSize-8);
 	line-height: 1.75;
 	overflow: hidden;
+	min-zoom: 100%;
 }
 
 body.loaded {
@@ -1118,7 +1119,7 @@ textarea.input-field {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
-@media (min-width: 320px) and (max-width: 574px) {
+@media (min-width: 375px) and (max-width: 574px) {
   .container {
     max-width: 100%;
     padding-inline: 20px;
