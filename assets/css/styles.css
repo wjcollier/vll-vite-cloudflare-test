@@ -155,6 +155,7 @@ html {
 
 body {
 	background-color: var(--bg-black);
+	min-width: 320px;
 	color: var(--text-light-gray);
 	font-family: var(--fontFamily-roboto), sans-serif;
 	font-size: var(--fontSize-8);
@@ -1117,7 +1118,7 @@ textarea.input-field {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
 span.title.vll {
 	font-size: 2rem;
 }
@@ -1125,7 +1126,7 @@ span.title.vll {
 h1.title {
 	font-size: 3rem;
 }
-}
+} */
 /**
  * responsive for large than 575px screen
  */
