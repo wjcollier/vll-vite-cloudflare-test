@@ -424,7 +424,6 @@ body.nav-active {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
 }
 
 .nav-open-btn {
@@ -433,10 +432,10 @@ body.nav-active {
 	display: grid;
 	place-content: center;
 	gap: 6px;
-	 margin-right: 20px;
+	margin-right: 20px;
 }
 .navbar.active + .nav-open-btn {
-  margin-left: 300px; /* adjust the margin when navbar is active */
+	margin-left: 300px; /* adjust the margin when navbar is active */
 }
 .nav-open-btn .line {
 	width: 24px;
@@ -615,6 +614,10 @@ h1.title {
 }
 p.title {
 	font-family: 'FiraCode NF', 'Voyage', sans-serif;
+}
+.hero-text strong {
+	font-weight: bold;
+	font-size: 18px;
 }
 
 /*-----------------------------------*\
@@ -875,10 +878,10 @@ padding-bottom: 40px;
 	opacity: 0;
 	transition: var(--transition-1);
 }
-h3 .card-title  {
+h3 .card-title {
 	font-size: 2rem;
 	font-weight: bolder;
-	letter-spacing: 0.20em;
+	letter-spacing: 0.2em;
 }
 .project-card .card-banner:is(:hover, :focus-within)::before {
 	opacity: 0.9;
@@ -1041,8 +1044,6 @@ textarea.input-field {
 		margin-left: 25px;
 	}
 }
-
-
 
 /*-----------------------------------*\
   #FOOTER
