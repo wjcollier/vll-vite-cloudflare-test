@@ -18,7 +18,9 @@
 			name="description"
 			content="Need innovative web and app development solutions? Violent Light Labs delivers cutting-edge, high-performance development, customization, refinement and AI imaging services that meet industry standards." />
 		<meta name="robots" content="index, follow" />
-		<meta name="keywords" content="freelance web development, custom website design, app development, mobile app design, e-commerce solutions, content management systems, WordPress development, web development services Bali Indonesia, Jakarta Indonesia, healthcare app development, real estate website design, UI/UX design, SEO, social media integration, responsive design, front-end development, back-end development, progressive web apps, custom software development, cloud computing and hosting, cybersecurity and data protection, digital marketing and advertising, branding and visual identity" />
+		<meta
+			name="keywords"
+			content="freelance web development, custom website design, app development, mobile app design, e-commerce solutions, content management systems, WordPress development, web development services Bali Indonesia, Jakarta Indonesia, healthcare app development, real estate website design, UI/UX design, SEO, social media integration, responsive design, front-end development, back-end development, progressive web apps, custom software development, cloud computing and hosting, cybersecurity and data protection, digital marketing and advertising, branding and visual identity" />
 		<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 		<meta http-equiv="Cache-control" content="max-age=3600, public" />
 
@@ -112,6 +114,14 @@
 		<!-- custom css link -->
 
 		<link rel="stylesheet" href="./assets/css/styles.css" />
+
+		<!-- cloudflare turnstile -->
+
+		<!-- load cloudflare turnstile  script asynchronously -->
+        <script
+          src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_turnstileCb"
+          async
+          defer></script>
 
 		<!-- preload images  -->
 
@@ -266,7 +276,11 @@
 										aria-hidden="true"></ion-icon>
 								</a>
 
-								<p class="hero-text"> <strong> Create | Build | Deploy | Enjoy</strong> <br>Crafting Bespoke Digital Solutions <br> Next-Generation Problem Solving</p>
+								<p class="hero-text">
+									<strong> Create | Build | Deploy | Enjoy</strong>
+									<br />Crafting Bespoke Digital Solutions <br />
+									Next-Generation Problem Solving
+								</p>
 							</div>
 						</div>
 
@@ -964,9 +978,18 @@
 				<!-- custom js link -->
 
 				<script src="./assets/js/script.js"></script>
-				
+				<script src="./index.js"></script>
 
 				<!-- ion-icon link -->
+				<script>
+          function _turnstileCb() {
+            console.debug('_turnstileCb called')
+            // Render the Turnstile widget
+            turnstile.render('#myWidget', {
+              sitekey: '0x4AAAAAAADqDVXdEVlpah_c',
+            })
+          }
+        </script>
 
 				<script
 					type="module"
