@@ -131,21 +131,8 @@
 
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 
-		<!-- load cloudflare turnstile  script asynchronously -->
+		<!-- load cloudflare turnstile   -->
 		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
-		<script>
-			function javascriptCallback(token) {
-				console.log('Challenge success:', token)
-				// add your token validation code here
-			}
-
-			turnstile.ready(function () {
-				turnstile.render('.cf-turnstile', {
-					sitekey: '0x4AAAAAAADqDVXdEVlpah_c',
-					callback: javascriptCallback,
-				})
-			})
-		</script>
 
 		<!-- preload images  -->
 
@@ -1015,9 +1002,30 @@
 
 				<!-- custom js link -->
 
-				<script  src="./assets/js/script.js"></script>
-			
+				<script src="./assets/js/script.js"></script>
 
+				<!-- Cloudflare turnstile -->
+				<script>
+					function javascriptCallback(token) {
+						console.log('Challenge success:', token)
+						// add your token validation code here
+					}
+
+					turnstile.ready(function () {
+						const container = document.querySelector('.cf-turnstile')
+						if (container) {
+							turnstile.render(container, {
+								sitekey: '0x4AAAAAAADqDVXdEVlpah_c',
+								callback: javascriptCallback,
+							})
+						} else {
+							console.error(
+								'Unable to find element with selector .cf-turnstile'
+							)
+						}
+					})
+				</script>
+				
 				<!-- ion-icon link -->
 
 				<script
