@@ -1,6 +1,6 @@
 {
-	"name": "",
-	"short_name": "",
+	"name": "Violent Light Labs",
+	"short_name": "VLL",
 	"icons": [
 		{
 			"src": "/android-chrome-512x512.png",
@@ -33,7 +33,8 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#ffffff",
+	"start_url": ".",
+	"display": "standalone",
 	"background_color": "#ffffff",
-	"display": "standalone"
+	"theme_color": "#ffffff"
 }
