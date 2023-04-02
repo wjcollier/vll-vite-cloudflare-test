@@ -381,11 +381,6 @@ body.nav-active {
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-/* #app {
-  width: 100%;
-  height: 200px;
-
-} */
 
 .header .btn {
 	display: none;
@@ -1128,17 +1123,10 @@ textarea.input-field {
 	h1.title {
 		font-size: 35px; /* adjust as needed */
 	}
+
 }
 
-/* @media (max-width: 375px) {
-span.title.vll {
-	font-size: 2rem;
-}
 
-h1.title {
-	font-size: 3rem;
-}
-} */
 /**
  * responsive for large than 575px screen
  */

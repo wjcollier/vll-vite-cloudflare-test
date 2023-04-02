@@ -21,8 +21,8 @@
 		<meta
 			name="keywords"
 			content="freelance web development, custom website design, app development, mobile app design, e-commerce solutions, content management systems, WordPress development, web development services Bali Indonesia, Jakarta Indonesia, healthcare app development, real estate website design, UI/UX design, SEO, social media integration, responsive design, front-end development, back-end development, progressive web apps, custom software development, cloud computing and hosting, cybersecurity and data protection, digital marketing and advertising, branding and visual identity" />
-		<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 		<meta http-equiv="Cache-control" content="max-age=3600, public" />
+		<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 
 		<meta
 			property="og:image"
@@ -39,7 +39,7 @@
 		<meta
 			property="instagram:url"
 			content="https://www.instagram.com/violentlightlabs/" />
-		<meta property="instagram:image" content="./assets/images/ellieMeta1.png" />
+		<meta property="instagram:image" content="./assets/images/compressed-webp/ellie2.png" />
 		<meta property="instagram:site" content="@violentlightlabs" />
 		<meta property="instagram:creator" content="@violentlightlabs" />
 
@@ -73,7 +73,7 @@
 		<meta
 			property="og:url"
 			content="https://www.linkedin.com/in/william-collier-405039b/" />
-		<meta property="og:image" content="./assets/images/VLL-logo1.webp" />
+		<meta property="og:image" content="./assets/images/compressed-webp/VLL-logo1.webp" />
 		<meta property="og:type" content="website" />
 		<meta name="profile:first_name" content="William" />
 		<meta name="profile:last_name" content="Collier" />
@@ -83,6 +83,14 @@
 			rel="apple-touch-icon"
 			sizes="180x180"
 			href="./assets/images/favicons/apple-touch-icon.png" />
+		<link
+			rel="android-chrome"
+			sizes="192x192"
+			href="./assets/images/favicons/android-chrome-192x192.png" />
+		<link
+			rel="android-chrome"
+			sizes="512x512"
+			href="./assets/images/favicons/android-chrome-512x512.png" />
 		<link
 			rel="icon"
 			type="image/png"
@@ -125,9 +133,9 @@
 
 		<!-- preload images  -->
 
-		<link rel="preload" as="image" href="./assets/images/hero-banner-1.webp" />
-		<link rel="preload" as="image" href="./assets/images/hero-shape-1.webp" />
-		<link rel="preload" as="image" href="./assets/images/hero-shape-2.webp" />
+		<link rel="preload" as="image" href="./assets/images/compressed-webp/hero-banner-1.webp" />
+		<link rel="preload" as="image" href="./assets/images/compressed-webp/hero-shape-1.webp" />
+		<link rel="preload" as="image" href="./assets/images/compressed-webp/hero-shape-2.webp" />
 	</head>
 
 	<body>
@@ -977,10 +985,11 @@
 
 				<!-- custom js link -->
 
-				<script src="./assets/js/script.js"></script>
-				<script src="./index.js"></script>
+				<script type="module" src="./assets/js/script.js"></script>
+				<script type="module" src="./index.js"></script>
 
-				<!-- ion-icon link -->
+				<!-- cloudflare explicit render -->
+
 				<script>
           function _turnstileCb() {
             console.debug('_turnstileCb called')
@@ -990,6 +999,8 @@
             })
           }
         </script>
+
+<!-- ion-icon link -->
 
 				<script
 					type="module"
