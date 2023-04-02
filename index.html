@@ -39,7 +39,9 @@
 		<meta
 			property="instagram:url"
 			content="https://www.instagram.com/violentlightlabs/" />
-		<meta property="instagram:image" content="./assets/images/compressed-webp/ellie2.png" />
+		<meta
+			property="instagram:image"
+			content="./assets/images/compressed-webp/ellie2.png" />
 		<meta property="instagram:site" content="@violentlightlabs" />
 		<meta property="instagram:creator" content="@violentlightlabs" />
 
@@ -73,7 +75,9 @@
 		<meta
 			property="og:url"
 			content="https://www.linkedin.com/in/william-collier-405039b/" />
-		<meta property="og:image" content="./assets/images/compressed-webp/VLL-logo1.webp" />
+		<meta
+			property="og:image"
+			content="./assets/images/compressed-webp/VLL-logo1.webp" />
 		<meta property="og:type" content="website" />
 		<meta name="profile:first_name" content="William" />
 		<meta name="profile:last_name" content="Collier" />
@@ -81,18 +85,22 @@
 		<!-- favicon from realfavicongenerator.net-->
 		<link
 			rel="apple-touch-icon"
+			type="image/png"
 			sizes="180x180"
 			href="./assets/images/favicons/apple-touch-icon.png" />
 		<link
-			rel="android-chrome"
+			rel="icon"
+			type="image/png"
 			sizes="192x192"
 			href="./assets/images/favicons/android-chrome-192x192.png" />
 		<link
-			rel="android-chrome"
+			rel="icon"
+			type="image/png"
 			sizes="512x512"
 			href="./assets/images/favicons/android-chrome-512x512.png" />
 		<link
 			rel="icon"
+			type="image/png"
 			type="image/png"
 			sizes="32x32"
 			href="./assets/images/favicons/favicon-32x32.png" />
@@ -123,19 +131,36 @@
 
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 
-		<!-- cloudflare turnstile -->
-
 		<!-- load cloudflare turnstile  script asynchronously -->
-        <script
-          src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_turnstileCb"
-          async
-          defer></script>
+		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+		<script>
+			function javascriptCallback(token) {
+				console.log('Challenge success:', token)
+				// add your token validation code here
+			}
+
+			turnstile.ready(function () {
+				turnstile.render('.cf-turnstile', {
+					sitekey: '0x4AAAAAAADqDVXdEVlpah_c',
+					callback: javascriptCallback,
+				})
+			})
+		</script>
 
 		<!-- preload images  -->
 
-		<link rel="preload" as="image" href="./assets/images/compressed-webp/hero-banner-1.webp" />
-		<link rel="preload" as="image" href="./assets/images/compressed-webp/hero-shape-1.webp" />
-		<link rel="preload" as="image" href="./assets/images/compressed-webp/hero-shape-2.webp" />
+		<link
+			rel="preload"
+			as="image"
+			href="./assets/images/compressed-webp/hero-banner-1.webp" />
+		<link
+			rel="preload"
+			as="image"
+			href="./assets/images/compressed-webp/hero-shape-1.webp" />
+		<link
+			rel="preload"
+			as="image"
+			href="./assets/images/compressed-webp/hero-shape-2.webp" />
 	</head>
 
 	<body>
@@ -872,7 +897,12 @@
 									placeholder="Enter message"
 									required
 									class="input-field"></textarea>
-								<div id="myWidget"></div>
+								<div
+									class="cf-turnstile"
+									data-sitekey="0x4AAAAAAADqDVXdEVlpah_c"
+									data-theme="light"
+									data-callback="javascriptCallback"></div>
+
 								<button type="submit" class="btn btn:hover">
 									<span class="span">Let's Connect</span>
 									<ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -985,22 +1015,10 @@
 
 				<!-- custom js link -->
 
-				<script type="module" src="./assets/js/script.js"></script>
-				<script type="module" src="./index.js"></script>
+				<script  src="./assets/js/script.js"></script>
+			
 
-				<!-- cloudflare explicit render -->
-
-				<script>
-          function _turnstileCb() {
-            console.debug('_turnstileCb called')
-            // Render the Turnstile widget
-            turnstile.render('#myWidget', {
-              sitekey: '0x4AAAAAAADqDVXdEVlpah_c',
-            })
-          }
-        </script>
-
-<!-- ion-icon link -->
+				<!-- ion-icon link -->
 
 				<script
 					type="module"
