@@ -1113,19 +1113,27 @@ textarea.input-field {
 		max-width: 100%;
 		padding-inline: 20px;
 	}
+	/* .hero {
+    padding-block-start: 90px;
+  } */
 	.hero .container {
-    grid-template-columns: 1fr;
-  }
+		grid-template-columns: 1fr;
+	}
 	.hero-banner {
-    width: 75%;
-    height: 95%;
-  }
+		width: 85%;
+		height: 95%;
+	}
 	.banner-outline::after {
-    top: 3px;
-    border-radius: 10px;
-  }
-	h1.title {
-		font-size: 20px; /* adjust as needed */
+		top: 3px;
+		border-radius: 10px;
+	}
+
+	.hero h1.title {
+		font-size: 30px;
+		margin-top: -28px;
+	}
+	.hero p.title {
+		/* margin-bottom: 0; */
 	}
 }
 @media (max-width: 575px) {
@@ -1133,9 +1141,9 @@ textarea.input-field {
 		font-size: 22px; /* adjust as needed */
 	}
 	.banner-outline .span {
-    font-size: var(--fontSize-3);
-    bottom: 30px;
-  }
+		font-size: var(--fontSize-3);
+		bottom: 30px;
+	}
 
 	h1.title {
 		font-size: 35px; /* adjust as needed */
