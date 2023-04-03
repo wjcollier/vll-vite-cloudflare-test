@@ -1118,12 +1118,15 @@ textarea.input-field {
   }
 	.hero-banner {
     width: 75%;
-    height: 75%;
+    height: 95%;
   }
 	.banner-outline::after {
     top: 3px;
     border-radius: 10px;
   }
+	h1.title {
+		font-size: 20px; /* adjust as needed */
+	}
 }
 @media (max-width: 575px) {
 	span.title.vll {
