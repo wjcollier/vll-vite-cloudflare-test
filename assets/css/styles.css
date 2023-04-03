@@ -636,7 +636,6 @@ p.title {
 	max-height: 280px;
 	margin: 20px;
 	padding: 20px;
-	/* padding-top: 10px; */
 	border: 1px solid var(--bg-jet);
 	border-radius: 10px;
 	overflow: hidden;
@@ -1114,18 +1113,31 @@ textarea.input-field {
 		max-width: 100%;
 		padding-inline: 20px;
 	}
+	.hero .container {
+    grid-template-columns: 1fr;
+  }
+	.hero-banner {
+    width: 75%;
+    height: 75%;
+  }
+	.banner-outline::after {
+    top: 3px;
+    border-radius: 10px;
+  }
 }
 @media (max-width: 575px) {
 	span.title.vll {
 		font-size: 22px; /* adjust as needed */
 	}
+	.banner-outline .span {
+    font-size: var(--fontSize-3);
+    bottom: 30px;
+  }
 
 	h1.title {
 		font-size: 35px; /* adjust as needed */
 	}
-
 }
-
 
 /**
  * responsive for large than 575px screen
